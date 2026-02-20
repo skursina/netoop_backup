@@ -1,0 +1,3 @@
+REPORT_FOLDER = 'reports'
+LOG_FOLDER = 'logs'
+GROUP_NUMBER = '144'
