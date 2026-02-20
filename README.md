@@ -24,4 +24,4 @@
 1. Клонировать репозиторий:
 ```bash
 git clone https://github.com/skursina/netoop_backup.git
-cd cat-backup
+cd netoop_backup
