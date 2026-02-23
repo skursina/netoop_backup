@@ -40,7 +40,7 @@ class CatAPIClient:
             )
             responses.raise_for_status()
 
-            total_size = int(responses.headers.get('Content-Light', 0))
+            total_size = int(responses.headers.get('Content-size', 0))
 
             if not total_size:
                 print('Что-то пошло не так. Сервер не вернул данные.')
@@ -84,7 +84,7 @@ class CatAPIClient:
             responses = requests.get(url, stream=True, timeout=self.timeout)
             responses.raise_for_status()
 
-            total_size = int(responses.headers.get('content-length', 0))
+            total_size = int(responses.headers.get('content-size', 0))
             image_data = bytearray()
 
             with tqdm(
